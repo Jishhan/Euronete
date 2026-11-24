@@ -1,71 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
-    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Pricing | ATS Resume</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <!-- header -->
+
+    <!-- Header -->
     <section class="header-wrapper">
         <div class="container">
             <header class="header">
-                <div class="logo">
-                    <img src="assets/images/logo 1.png" alt="Pen Icon" class="pen-icon">
-                </div>
 
-                <div class="menu-toggle" id="menu-toggle">☰</div>
+                <a href="./index.html" class="logo" aria-label="Go to Home">
+                    <img src="./assets/images/logo 1.png" alt="ATS Resume Logo" class="pen-icon">
+                </a>
+
+                <div class="menu-toggle" id="menu-toggle"
+                    role="button" tabindex="0"
+                    aria-label="Toggle navigation" aria-expanded="false">
+                    ☰
+                </div>
 
                 <div class="nav-menu" id="nav-menu">
                     <nav class="nav-links">
-                        <a href="./index.html" class="active">Home</a>
-                        <a href="./aboutus.html" class="active">About Us</a>
-                        <a href="./services.html" class="active">Our Services</a>
+                        <a href="./index.html">Home</a>
+                        <a href="./aboutus.html">About Us</a>
+                        <a href="./services.html">Our Services</a>
                         <a href="./pricing.html" class="active">Pricing</a>
-                        <a href="./faq.html" class="active">FAQs</a>
+                        <a href="./faq.html">FAQs</a>
                     </nav>
 
                     <div class="header-buttons">
-                        <a href="./whyus.html" class="solid-btn">Why Choose Us</a>
+                        <a href="./aboutus.html" class="solid-btn">Why Choose Us</a>
                         <a href="./contact.html" class="solid-btn">Contact</a>
                     </div>
                 </div>
+
             </header>
         </div>
     </section>
+
     <!-- Banner -->
     <section class="about-banner">
         <h1>Pricing</h1>
-        <nav class="breadcrumb">
-            <a href="#">Home</a> &gt; <span>Pricing</span>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="./index.html">Home</a> &gt;
+            <span>Pricing</span>
         </nav>
     </section>
-    <!-- subscription -->
+
+    <!-- Pricing Section -->
     <section class="pricing-section">
+
         <div class="pricing-header">
-            <h2><span>Choose the Right</span> Package for Your Career Goals</h2>
-            <p>Whether you’re applying to your first job or your dream role, there’s a package built to give you the
-                clarity, confidence, and tools you need to get hired faster.</p>
+            <h2>
+                <span>Choose the Right</span> Package for Your Career Goals
+            </h2>
+
+            <p>
+                Whether you’re applying to your first job or your dream role,
+                there’s a package built to give you the clarity, confidence,
+                and tools you need to get hired faster.
+            </p>
         </div>
 
         <div class="pricing-cards">
-            <!-- Card 1 -->
+
+            <!-- Card 1: Starter -->
             <div class="card">
+
                 <div class="card-top starter">
                     <span class="package-name">STARTER</span>
+
                     <div class="prices">
                         <small><s>₹ X,XXX</s></small>
                         <strong>₹ X,XXX</strong>
                     </div>
                 </div>
+
                 <div class="card-body">
+
                     <div class="highlight-box">
                         <h4>Perfect for</h4>
-                        <p>Freshers or job seekers with a resume that needs a boost</p>
+                        <p>
+                            Freshers or job seekers with a resume that needs a boost
+                        </p>
                     </div>
+
                     <ul class="features">
                         <li>ATS-optimized resume writing</li>
                         <li>Tailored to your industry and experience level</li>
@@ -74,25 +100,36 @@
                         <li>1 round of revision</li>
                         <li>ATS compatibility check</li>
                     </ul>
+
                 </div>
+
                 <div class="card-footer">
-                    <button>Buy</button>
+                    <a href="./contact.html" class="button-red">Buy</a>
                 </div>
+
             </div>
-            <!-- Card 2 -->
+
+            <!-- Card 2: Premium -->
             <div class="card-p">
+
                 <div class="card-top premium">
                     <span class="package-name">PREMIUM</span>
+
                     <div class="prices">
                         <small><s>₹ X,XXX</s></small>
                         <strong>₹ X,XXX</strong>
                     </div>
                 </div>
+
                 <div class="card-body">
+
                     <div class="highlight-box">
                         <h4>Perfect for</h4>
-                        <p>Professionals aiming for high-impact roles or competitive industries</p>
+                        <p>
+                            Professionals aiming for high-impact roles or competitive industries
+                        </p>
                     </div>
+
                     <ul class="features">
                         <li>1:1 Mock Interview Session with Feedback</li>
                         <li>Real HR interview questions based on your domain</li>
@@ -100,117 +137,179 @@
                         <li>3 rounds of resume revisions</li>
                         <li>Priority delivery</li>
                     </ul>
+
                 </div>
+
                 <div class="card-footer">
-                    <button>Buy</button>
+                    <a href="./contact.html" class="button-red">Buy</a>
                 </div>
+
             </div>
 
-            <!-- Card 3 -->
+            <!-- Card 3: Premium Plus (Suggested package name) -->
             <div class="card">
+
                 <div class="card-top starter">
-                    <span class="package-name">STARTER</span>
+                    <span class="package-name">PREMIUM PLUS</span>
+
                     <div class="prices">
                         <small><s>₹ X,XXX</s></small>
                         <strong>₹ X,XXX</strong>
                     </div>
                 </div>
+
                 <div class="card-body">
+
                     <div class="highlight-box">
                         <h4>Perfect for</h4>
-                        <p>Freshers or job seekers with a resume that needs a boost</p>
+                        <p>
+                            Job seekers looking for comprehensive career support
+                        </p>
                     </div>
+
                     <ul class="features">
                         <li>ATS-optimized resume writing</li>
                         <li>Tailored to your industry and experience level</li>
-                        <li>Formatting for readability and system compatibility</li>
+                        <li>Professional resume formatting</li>
                         <li>Free 30-min Career Strategy Call</li>
-                        <li>1 round of revision</li>
+                        <li>Multiple rounds of revisions</li>
                         <li>ATS compatibility check</li>
                     </ul>
+
                 </div>
+
                 <div class="card-footer">
-                    <button>Buy</button>
+                    <a href="./contact.html" class="button-red">Buy</a>
                 </div>
+
             </div>
+
         </div>
     </section>
-    <!-- tired -->
 
+    <!-- CTA Section -->
     <div class="tired">
         <div class="container">
-            <h1>Are you tired of being<span class="normal"></span> ignored by recruiters ?<br>you’re in the right
-                place</span></h1>
+
+            <h1>
+                Are you tired of being
+                <span class="normal">ignored by recruiters?</span>
+                <br>
+                You’re in the right place
+            </h1>
+
             <div class="tired-btn">
-                <a href="#" class="button-red">Book a Free Consultation</a>
-                <a href="#" class="button-gray">Browse Our Resume Packages</a>
+                <a href="./contact.html" class="button-red">
+                    Book a Free Consultation
+                </a>
+
+                <a href="./pricing.html" class="button-gray">
+                    Browse Our Resume Packages
+                </a>
             </div>
+
         </div>
     </div>
 
-    <!-- footer -->
-
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
+
             <div class="footer-wrap">
+
                 <ul class="links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Refund Policy</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
                 </ul>
+
                 <ul class="links">
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Mock Interview</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./services.html">Our Services</a></li>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
                 </ul>
+
                 <ul class="links">
-                    <li><a href="#">Why Choose Us</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Faq</a></li>
+                    <li><a href="./aboutus.html">Why Choose Us</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./faq.html">Faq</a></li>
                 </ul>
-                <div>
-                    <!-- Replace with actual image URL -->
-                    <img src="/assets/images/footer 1.png" alt="Illustration">
-                </div>
 
                 <div>
+                    <img src="./assets/images/footer 1.png" alt="Footer Illustration">
+                </div>
+
+                <div class="social-links">
+
                     <span class="footer-link">Follow Us On</span>
+
                     <div class="social">
 
-                        <a href="#"><img src="./assets/images/Clip path group.png" alt="Twitter"></a>
-                        <a href="#"><img src="./assets/images/social-2.png" alt="Facebook"></a>
-                        <a href="#"><img src="./assets/images/social-3.png" alt="LinkedIn"></a>
-                        <a href="#"><img src="./assets/images/social-4.png" alt="Instagram"></a>
+                        <a href="https://x.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Twitter">
+                            <img src="./assets/images/Clip path group.png" alt="Twitter">
+                        </a>
+
+                        <a href="https://www.facebook.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Facebook">
+                            <img src="./assets/images/social-2.png" alt="Facebook">
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img src="./assets/images/social-3.png" alt="LinkedIn">
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="./assets/images/social-4.png" alt="Instagram">
+                        </a>
+
                     </div>
+
                     <div class="buttons">
-                        <a href="#">Resume Packages</a>
-                        <a href="#">Contact Us</a>
+                        <a href="./pricing.html">Resume Packages</a>
+                        <a href="./contact.html">Contact Us</a>
                     </div>
+
                 </div>
+
             </div>
         </div>
-
     </div>
+
+    <!-- Copyright -->
     <div class="copyright">
         © 2025 ATS Resume. All Rights Reserved
     </div>
 
-
-
-
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script>
         const toggle = document.getElementById('menu-toggle');
         const navMenu = document.getElementById('nav-menu');
 
-        toggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            toggle.classList.toggle('open');
-        });
-    </script>
-</body>
+        if (toggle && navMenu) {
 
+            function toggleMenu() {
+                const isActive = navMenu.classList.toggle('active');
+
+                toggle.classList.toggle('open', isActive);
+                toggle.setAttribute('aria-expanded', isActive);
+            }
+
+            toggle.addEventListener('click', toggleMenu);
+
+            toggle.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    toggleMenu();
+                }
+            });
+
+        }
+    </script>
+
+</body>
 </html>

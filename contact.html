@@ -1,153 +1,274 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ContactUs</title>
-    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Contact Us | ATS Resume</title>
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 
 <body>
-    <!-- header -->
+
+    <!-- HEADER -->
     <section class="header-wrapper">
-      <div class="container">
-        <header class="header">
-          <div class="logo">
-            <img src="assets/images/logo 1.png" alt="Pen Icon" class="pen-icon">
-          </div>
-    
-          <div class="menu-toggle" id="menu-toggle">☰</div>
-    
-          <div class="nav-menu" id="nav-menu">
-            <nav class="nav-links">
-              <a href="./index.html" class="active">Home</a>
-              <a href="./aboutus.html" class="active">About Us</a>
-              <a href="./services.html" class="active">Our Services</a>
-              <a href="./pricing.html" class="active">Pricing</a>
-              <a href="./faq.html" class="active">FAQs</a>
-            </nav>
-    
-            <div class="header-buttons">
-              <a href="./whyus.html" class="solid-btn">Why Choose Us</a>
-              <a href="./contact.html" class="solid-btn">Contact</a>
-            </div>
-          </div>
-        </header>
-      </div>
+        <div class="container">
+            <header class="header">
+
+                <a href="./index.html" class="logo" aria-label="Go to Home">
+                    <img src="./assets/images/logo 1.png" alt="ATS Resume Logo" class="pen-icon">
+                </a>
+
+                <div class="menu-toggle" id="menu-toggle"
+                    role="button" tabindex="0" aria-label="Toggle navigation" aria-expanded="false">
+                    ☰
+                </div>
+
+                <div class="nav-menu" id="nav-menu">
+                    <nav class="nav-links">
+                        <a href="./index.html">Home</a>
+                        <a href="./aboutus.html">About Us</a>
+                        <a href="./services.html">Our Services</a>
+                        <a href="./pricing.html">Pricing</a>
+                        <a href="./faq.html">FAQs</a>
+                    </nav>
+
+                    <div class="header-buttons">
+                        <a href="./aboutus.html" class="solid-btn">Why Choose Us</a>
+                        <a href="./contact.html" class="solid-btn active">Contact</a>
+                    </div>
+                </div>
+
+            </header>
+        </div>
     </section>
-    <!-- Banner -->
+
+    <!-- BANNER -->
     <section class="about-banner">
-        <h1>About Us</h1>
-        <nav class="breadcrumb">
-            <a href="#">Home</a> &gt; <span>About Us</span>
+        <h1>Contact Us</h1>
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="./index.html">Home</a>
+            &gt;
+            <span>Contact Us</span>
         </nav>
     </section>
 
-    <!-- contact -->
-
+    <!-- CONTACT SECTION -->
     <section class="contact-section">
+
         <div class="contact-left">
-            <img src="./assets/images/contact 1.svg" alt="Email Illustration" class="contact-image">
-            <h2><span>Let's Talk</span> About Your Career Goals</h2>
+            <img src="./assets/images/contact 1.svg"
+                alt="Contact Illustration" class="contact-image">
+
+            <h2>
+                <span>Let's Talk</span>
+                About Your Career Goals
+            </h2>
+
             <ul class="contact-info">
-                <li><img src="./assets/images/Group 1321314992.svg" alt="Question Icon"> Have a question about a service?</li>
-                <li><img src="./assets/images/Group 1321314993.svg" alt="Package Icon"> Not sure which package is right for you?</li>
-                <li><img src="./assets/images/Group 1321314994.svg" alt="Phone Icon"> Or just want to connect before getting started?</li>
+                <li>
+                    <img src="./assets/images/Group 1321314992.svg" alt="Question Icon">
+                    Have a question about a service?
+                </li>
+
+                <li>
+                    <img src="./assets/images/Group 1321314993.svg" alt="Package Icon">
+                    Not sure which package is right for you?
+                </li>
+
+                <li>
+                    <img src="./assets/images/Group 1321314994.svg" alt="Phone Icon">
+                    Or just want to connect before getting started?
+                </li>
             </ul>
         </div>
 
         <div class="contact-right">
-            <form class="contact-form">
+
+            <form class="contact-form" action="#" method="POST">
+
                 <div class="form-row">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
+                    <input
+                        type="text"
+                        name="firstName"
+                        placeholder="First Name"
+                        aria-label="First Name"
+                        autocomplete="given-name"
+                        required>
+
+                    <input
+                        type="text"
+                        name="lastName"
+                        placeholder="Last Name"
+                        aria-label="Last Name"
+                        autocomplete="family-name"
+                        required>
                 </div>
+
                 <div class="form-row">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Mobile No">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        aria-label="Email"
+                        autocomplete="email"
+                        required>
+
+                    <input
+                        type="tel"
+                        name="mobile"
+                        placeholder="Mobile No"
+                        aria-label="Mobile Number"
+                        autocomplete="tel"
+                        required>
                 </div>
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit" class="submit-btn">Send My Message</button>
+
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    aria-label="Your Message"
+                    rows="5"
+                    required></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Send My Message
+                </button>
+
             </form>
         </div>
+
     </section>
 
-    <!-- tired -->
-
+    <!-- CALL TO ACTION -->
     <div class="tired">
-      <div class="container">
-        <h1>Are you tired of being<span class="normal"></span> ignored by recruiters ?<br>you’re in the right place</span></h1>
-        <div class="tired-btn">
-          <a href="#" class="button-red">Book a Free Consultation</a>
-          <a href="#" class="button-gray">Browse Our Resume Packages</a>
-        </div>
-      </div>
-    </div>
-  
-  
-  <!-- footer -->
+        <div class="container">
 
-  <div class="footer">
-    <div class="container">
-      <div class="footer-wrap">
-        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Refund Policy</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-        <ul class="links">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Mock Interview</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-        <ul class="links">
-          <li><a href="#">Why Choose Us</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Disclaimer</a></li>
-          <li><a href="#">Faq</a></li>
-        </ul>
-        <div>
-          <!-- Replace with actual image URL -->
-          <img src="/assets/images/footer 1.png" alt="Illustration">
-        </div>
+            <h1>
+                Are you tired of being
+                <span class="normal">ignored by recruiters?</span>
+                <br>
+                You’re in the right place
+            </h1>
 
-        <div>
-          <span class="footer-link">Follow Us On</span>
-          <div class="social">
+            <div class="tired-btn">
+                <a href="./contact.html" class="button-red">
+                    Book a Free Consultation
+                </a>
 
-            <a href="#"><img src="./assets/images/Clip path group.png" alt="Twitter"></a>
-            <a href="#"><img src="./assets/images/social-2.png" alt="Facebook"></a>
-            <a href="#"><img src="./assets/images/social-3.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./assets/images/social-4.png" alt="Instagram"></a>
-          </div>
-          <div class="buttons">
-            <a href="#">Resume Packages</a>
-            <a href="#">Contact Us</a>
-          </div>
+                <a href="./pricing.html" class="button-gray">
+                    Browse Our Resume Packages
+                </a>
+            </div>
+
         </div>
-      </div>
     </div>
 
-  </div>
-  <div class="copyright">
-    © 2025 ATS Resume. All Rights Reserved
-  </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
 
+            <div class="footer-wrap">
 
+                <ul class="links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-  
-    toggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      toggle.classList.toggle('open');
-    });
-  </script>
+                <ul class="links">
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./services.html">Our Services</a></li>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                </ul>
+
+                <ul class="links">
+                    <li><a href="./aboutus.html">Why Choose Us</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./faq.html">Faq</a></li>
+                </ul>
+
+                <div>
+                    <img src="./assets/images/footer 1.png" alt="Footer Illustration">
+                </div>
+
+                <div class="social-links">
+
+                    <span class="footer-link">Follow Us On</span>
+
+                    <div class="social">
+
+                        <a href="https://x.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="./assets/images/Clip path group.png" alt="Twitter">
+                        </a>
+
+                        <a href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="./assets/images/social-2.png" alt="Facebook">
+                        </a>
+
+                        <a href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <img src="./assets/images/social-3.png" alt="LinkedIn">
+                        </a>
+
+                        <a href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <img src="./assets/images/social-4.png" alt="Instagram">
+                        </a>
+
+                    </div>
+
+                    <div class="buttons">
+                        <a href="./pricing.html">Resume Packages</a>
+                        <a href="./contact.html">Contact Us</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+        © 2025 ATS Resume. All Rights Reserved
+    </div>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (toggle && navMenu) {
+
+            function toggleMenu() {
+                const isActive = navMenu.classList.toggle('active');
+
+                toggle.classList.toggle('open', isActive);
+                toggle.setAttribute('aria-expanded', isActive);
+            }
+
+            toggle.addEventListener('click', toggleMenu);
+
+            toggle.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    toggleMenu();
+                }
+            });
+        }
+    </script>
+
 </body>
-
 </html>

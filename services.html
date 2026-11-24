@@ -1,66 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Our Services | ATS Resume</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <!-- header -->
+
+    <!-- Header -->
     <section class="header-wrapper">
         <div class="container">
-          <header class="header">
-            <div class="logo">
-              <img src="assets/images/logo 1.png" alt="Pen Icon" class="pen-icon">
-            </div>
-      
-            <div class="menu-toggle" id="menu-toggle">☰</div>
-      
-            <div class="nav-menu" id="nav-menu">
-              <nav class="nav-links">
-                <a href="./index.html" class="active">Home</a>
-                <a href="./aboutus.html" class="active">About Us</a>
-                <a href="./services.html" class="active">Our Services</a>
-                <a href="./pricing.html" class="active">Pricing</a>
-                <a href="./faq.html" class="active">FAQs</a>
-              </nav>
-      
-              <div class="header-buttons">
-                <a href="./whyus.html" class="solid-btn">Why Choose Us</a>
-                <a href="./contact.html" class="solid-btn">Contact</a>
-              </div>
-            </div>
-          </header>
+            <header class="header">
+
+                <a href="./index.html" class="logo" aria-label="Go to Home">
+                    <img src="./assets/images/logo 1.png" alt="ATS Resume Logo" class="pen-icon">
+                </a>
+
+                <div class="menu-toggle" id="menu-toggle"
+                    role="button" tabindex="0"
+                    aria-label="Toggle navigation" aria-expanded="false">
+                    ☰
+                </div>
+
+                <div class="nav-menu" id="nav-menu">
+                    <nav class="nav-links">
+                        <a href="./index.html">Home</a>
+                        <a href="./aboutus.html">About Us</a>
+                        <a href="./services.html" class="active">Our Services</a>
+                        <a href="./pricing.html">Pricing</a>
+                        <a href="./faq.html">FAQs</a>
+                    </nav>
+
+                    <div class="header-buttons">
+                        <a href="./aboutus.html" class="solid-btn">Why Choose Us</a>
+                        <a href="./contact.html" class="solid-btn">Contact</a>
+                    </div>
+                </div>
+
+            </header>
         </div>
-      </section>
+    </section>
+
     <!-- Banner -->
     <section class="about-banner">
         <h1>Our Services</h1>
-        <nav class="breadcrumb">
-            <a href="#">Home</a> &gt; <span>Our Services</span>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="./index.html">Home</a> &gt;
+            <span>Our Services</span>
         </nav>
     </section>
 
-    <!-- ats-section -->
-
+    <!-- ATS-Friendly Resume Writing -->
     <section class="ats-section">
         <div class="ats-content">
+
             <div class="ats-left">
-                <img src="./assets/images/services 1.png" alt="ATS Writing Illustration" class="ats-illustration">
+                <img src="./assets/images/services 1.png"
+                    alt="ATS Writing Illustration"
+                    class="ats-illustration">
             </div>
+
             <div class="ats-right">
                 <h1>ATS-Friendly Resume Writing</h1>
-                <h3>Get a resume that gets past filters—and gets you interviews.</h3>
+
+                <h3>
+                    Get a resume that gets past filters—and gets you interviews.
+                </h3>
+
                 <p>
                     Tired of being ignored after applying? Your resume may be the problem.
-                    You'll get a professionally crafted, ATS-optimized resume built by an HR expert
-                    who understands exactly what hiring managers and recruiters want.
+                    You'll get a professionally crafted, ATS-optimized resume built by
+                    an HR expert who understands exactly what hiring managers and
+                    recruiters want.
                 </p>
 
                 <h4>Ideal for</h4>
+
                 <div class="ideal-tags">
                     <span class="tag">Freshers</span>
                     <span class="tag">Mid-Level Professionals</span>
@@ -68,231 +87,395 @@
                 </div>
 
                 <h4>What you get</h4>
+
                 <ul class="ats-features">
-                    <li><img src="check-icon.png" alt="Check Icon"> Custom-written resume tailored to your role and
-                        industry</li>
-                    <li><img src="check-icon.png" alt="Check Icon"> Keyword optimization for better ATS performance
+                    <li>
+                        <img src="./assets/images/check-icon.png" alt="Check Icon">
+                        Custom-written resume tailored to your role and industry
                     </li>
-                    <li><img src="check-icon.png" alt="Check Icon"> Professional formatting for readability and
-                        impact
+
+                    <li>
+                        <img src="./assets/images/check-icon.png" alt="Check Icon">
+                        Keyword optimization for better ATS performance
                     </li>
-                    <li><img src="check-icon.png" alt="Check Icon"> Free 30-min Career Strategy Call included</li>
-                    <li><img src="check-icon.png" alt="Check Icon"> Final check for ATS compatibility</li>
+
+                    <li>
+                        <img src="./assets/images/check-icon.png" alt="Check Icon">
+                        Professional formatting for readability and impact
+                    </li>
+
+                    <li>
+                        <img src="./assets/images/check-icon.png" alt="Check Icon">
+                        Free 30-min Career Strategy Call included
+                    </li>
+
+                    <li>
+                        <img src="./assets/images/check-icon.png" alt="Check Icon">
+                        Final check for ATS compatibility
+                    </li>
                 </ul>
             </div>
+
         </div>
     </section>
-    <!-- cover -->
 
-    <section class="">
+    <!-- Cover Letter Writing -->
+    <section>
         <div class="cover-letter-section">
             <div class="cover-letter-container">
+
                 <div class="cover-left">
                     <h2>Cover Letter Writing</h2>
                     <h4>Add a human touch to your application</h4>
+
                     <p>
-                        A personalized cover letter shows you're serious about the job and it tells your story
-                        in a way your resume can’t. Let us help you create a letter that complements your resume
-                        and speaks directly to hiring managers.
+                        A personalized cover letter shows you're serious about the job
+                        and it tells your story in a way your resume can’t. Let us help
+                        you create a letter that complements your resume and speaks
+                        directly to hiring managers.
                     </p>
                 </div>
+
                 <div class="cover-right">
                     <h4>What you’ll receive</h4>
+
                     <ul class="cover-features">
-                        <li><img src="./assets/images/Group 1321314982.svg" alt="Document Icon"> A cover letter tailored
-                            to your resume and
-                            target
-                            role</li>
-                        <li><img src="./assets/images/Group 1321314983.svg" alt="Tone Icon"> Industry-appropriate tone
-                            and structure</li>
-                        <li><img src="./assets/images/Group 1321314984.svg" alt="Reusable Icon"> A reusable version you
-                            can adapt for
-                            future
-                            applications</li>
+                        <li>
+                            <img src="./assets/images/Group 1321314982.svg" alt="Document Icon">
+                            A cover letter tailored to your resume and target role
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/Group 1321314983.svg" alt="Tone Icon">
+                            Industry-appropriate tone and structure
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/Group 1321314984.svg" alt="Reusable Icon">
+                            A reusable version you can adapt for future applications
+                        </li>
                     </ul>
                 </div>
+
             </div>
-        </div>
         </div>
     </section>
 
-    <!-- cover -->
-
-    <section class="">
+    <!-- LinkedIn Profile Optimization -->
+    <section>
         <div class="cover-letter-section">
             <div class="cover-letter-container">
+
                 <div class="cover-left">
                     <h2>LinkedIn Profile Optimization</h2>
                     <h4>Let recruiters find you before you even apply</h4>
+
                     <p>
-                        Your LinkedIn profile is a magnet for opportunities—if it's optimized. We'll help you rewrite it to show up in searches, tell your story, and impress decision-makers at a glance.
+                        Your LinkedIn profile is a magnet for opportunities—if it's
+                        optimized. We'll help you rewrite it to show up in searches,
+                        tell your story, and impress decision-makers at a glance.
                     </p>
                 </div>
+
                 <div class="cover-right">
                     <h4>Your optimized profile includes</h4>
+
                     <ul class="cover-features">
-                        <li><img src="./assets/images/Group 1321314985.svg" alt="Document Icon"> A keyword-rich headline and summary</li>
-                        <li><img src="./assets/images/Group 1321314986.svg" alt="Tone Icon"> Updated experience sections that mirror your resume</li>
-                        <li><img src="./assets/images/Group 1321314987.svg" alt="Reusable Icon">Detailed verbal and written feedback</li>
+                        <li>
+                            <img src="./assets/images/Group 1321314985.svg" alt="Document Icon">
+                            A keyword-rich headline and summary
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/Group 1321314986.svg" alt="Tone Icon">
+                            Updated experience sections that mirror your resume
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/Group 1321314987.svg" alt="Feedback Icon">
+                            Detailed verbal and written feedback
+                        </li>
                     </ul>
                 </div>
+
             </div>
-        </div>
         </div>
     </section>
 
-     <!-- cover -->
-
-     <section class="">
+    <!-- Mock Interviews -->
+    <section>
         <div class="cover-letter-section">
             <div class="cover-letter-container">
+
                 <div class="cover-left">
                     <h2>Mock Interviews</h2>
                     <h4>Interview with confidence and clarity</h4>
+
                     <p>
-                        Struggle with nerves or unclear answers? You’ll get personalized coaching through a simulated interview, based on the roles you're targeting. It’s like practicing with a real recruiter—because you're working with one.
+                        Struggle with nerves or unclear answers? You’ll get personalized
+                        coaching through a simulated interview, based on the roles
+                        you're targeting. It’s like practicing with a real recruiter—
+                        because you're working with one.
                     </p>
                 </div>
+
                 <div class="cover-right">
                     <h4>What’s included</h4>
+
                     <ul class="cover-features">
-                        <li><img src="./assets/images/Group 1321314988.svg" alt="Document Icon">1:1 mock interview session via Zoom or call</li>
-                        <li><img src="./assets/images/Group 1321314990.svg" alt="Tone Icon"> Real HR questions based on your industry and experience</li>
-                        <li><img src="./assets/images/Group 1321314989.svg" alt="Reusable Icon"> Detailed verbal and written feedback</li>
-                        <li><img src="./assets/images/Group 1321314991.svg" alt="Reusable Icon"> Tips on body language, tone, and phrasing</li>
+                        <li>
+                            <img src="./assets/images/Group 1321314988.svg" alt="Interview Icon">
+                            1:1 mock interview session via Zoom or call
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/Group 1321314990.svg" alt="Questions Icon">
+                            Real HR questions based on your industry and experience
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/Group 1321314989.svg" alt="Feedback Icon">
+                            Detailed verbal and written feedback
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/Group 1321314991.svg" alt="Tips Icon">
+                            Tips on body language, tone, and phrasing
+                        </li>
                     </ul>
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why AI and Template-Based Resumes Won't Work -->
+    <div class="box-wrapper">
+        <div class="container">
+
+            <div class="box">
+                <h2>
+                    Why <span>AI-Generated</span> and Template-Based
+                    <br>
+                    Resumes <span>Won’t Work</span> for You
+                </h2>
+            </div>
+
+            <div class="box-wrap-per">
+
+                <div class="why-points">
+
+                    <div class="why-point-2">
+                        <img src="./assets/images/red-cross 1.svg"
+                            alt="Cross Icon" class="icon">
+
+                        <div>
+                            <h3>No Context</h3>
+                            <p>
+                                AI can't understand why your experience matters or how
+                                it connects to the job you're targeting.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-point-2">
+                        <img src="./assets/images/red-cross 1.svg"
+                            alt="Cross Icon" class="icon">
+
+                        <div>
+                            <h3>No Voice</h3>
+                            <p>
+                                Templates produce cold, robotic language that fails
+                                to capture your personal brand or confidence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-point-2">
+                        <img src="./assets/images/red-cross 1.svg"
+                            alt="Cross Icon" class="icon">
+
+                        <div>
+                            <h3>No Positioning</h3>
+                            <p>
+                                AI doesn’t know how to frame your strengths to make
+                                you stand out in a competitive pool.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-point-2">
+                        <img src="./assets/images/red-cross 1.svg"
+                            alt="Cross Icon" class="icon">
+
+                        <div>
+                            <h3>No Adaptability</h3>
+                            <p>
+                                Templates can’t adjust your story to different roles,
+                                industries, or growth stages.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right-column">
+
+                    <div class="point-green">
+                        <span class="icon green">
+                            <img src="./assets/images/green-tick 1.png" alt="Green Tick">
+                        </span>
+
+                        <p>
+                            Resume Drafting by Real HR who understands how real
+                            recruiters think and hire
+                        </p>
+                    </div>
+
+                    <div class="image-placeholder">
+                        <img src="./assets/images/home-5-1 1.png"
+                            alt="Illustration of people">
+                    </div>
+
+                    <p>
+                        Recruiters and hiring managers don’t select template-based
+                        or AI-generated resumes. They select resumes with enough
+                        potential, clarity, and connection. If your resume doesn’t
+                        speak to a real person with clarity and purpose, it won’t
+                        move forward. That’s the difference a real HR expert makes
+                        while drafting your resume.
+                    </p>
+
+                </div>
+
             </div>
         </div>
     </div>
-</section>
 
-<!-- box -->
-
-<div class="box-wrapper">
-    <div class="container">
-      <div class="box">
-        <h2>Why <span>AI-Generated </span>and Template-Based<br> Resumes <span> Won’t Work </span> for You</h2>
-      </div>
-      <div class="box-wrap-per">
-        <div class="why-points">
-          <div class="why-point-2">
-            <img src="./assets/images/red-cross 1.svg" alt="Expert icon" class="icon">
-            <div>
-              <h3>No Context</h3>
-              <p>AI can't understand why your experience matters or how it connects to the job you're targeting.</p>
-            </div>
-          </div>
-          <div class="why-point-2">
-            <img src="./assets/images/red-cross 1.svg" alt="User icon" class="icon">
-            <div>
-              <h3>No Voice</h3>
-              <p>Templates produce cold, robotic language that fails to capture your personal brand or confidence.</p>
-            </div>
-          </div>
-          <div class="why-point-2">
-            <img src="./assets/images/red-cross 1.svg" alt="ATS icon" class="icon">
-            <div>
-              <h3>No Positioning</h3>
-              <p> AI doesn’t know how to frame your strengths to make you stand out in a competitive pool.</p>
-            </div>
-          </div>
-          <div class="why-point-2">
-            <img src="./assets/images/red-cross 1.svg" alt="Metrics icon" class="icon">
-            <div>
-              <h3>No Adaptability</h3>
-              <p>Templates can’t adjust your story to different roles, industries, or growth stages.</p>
-            </div>
-          </div>
-        </div>
-        <div class="right-column">
-          <div class="point-green">
-            <span class="icon green"><img src="assets/images/green-tick 1.png" alt="greeen dot"></span>
-            <p>Resume Drafting by Real HR who understands how real recruiters think and hire</p>
-          </div>
-          <div class="image-placeholder">
-
-            <img src="./assets/images/home-5-1 1.png" alt="Illustration of people">
-          </div>
-          <p>Recruiters and hiring managers don’t select template-based or AI-generated resumes. They select resumes
-            with
-            enough potential, clarity, and connection. If your resume doesn’t speak to a real person with clarity and
-            purpose, it won’t move forward. That’s the difference a real HR expert makes while drafting your resume.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- tired -->
-
+    <!-- CTA Section -->
     <div class="tired">
         <div class="container">
-          <h1>Are you tired of being<span class="normal"></span> ignored by recruiters ?<br>you’re in the right place</span></h1>
-          <div class="tired-btn">
-            <a href="#" class="button-red">Book a Free Consultation</a>
-            <a href="#" class="button-gray">Browse Our Resume Packages</a>
-          </div>
-        </div>
-      </div>
-    
-    <!-- footer -->
 
+            <h1>
+                Are you tired of being
+                <span class="normal">ignored by recruiters?</span>
+                <br>
+                You’re in the right place
+            </h1>
+
+            <div class="tired-btn">
+                <a href="./contact.html" class="button-red">
+                    Book a Free Consultation
+                </a>
+
+                <a href="./pricing.html" class="button-gray">
+                    Browse Our Resume Packages
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
+
             <div class="footer-wrap">
+
                 <ul class="links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Refund Policy</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
                 </ul>
+
                 <ul class="links">
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Mock Interview</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./services.html">Our Services</a></li>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
                 </ul>
+
                 <ul class="links">
-                    <li><a href="#">Why Choose Us</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Faq</a></li>
+                    <li><a href="./aboutus.html">Why Choose Us</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./faq.html">Faq</a></li>
                 </ul>
-                <div>
-                    <!-- Replace with actual image URL -->
-                    <img src="/assets/images/footer 1.png" alt="Illustration">
-                </div>
 
                 <div>
+                    <img src="./assets/images/footer 1.png"
+                        alt="Footer Illustration">
+                </div>
+
+                <div class="social-links">
+
                     <span class="footer-link">Follow Us On</span>
+
                     <div class="social">
 
-                        <a href="#"><img src="./assets/images/Clip path group.png" alt="Twitter"></a>
-                        <a href="#"><img src="./assets/images/social-2.png" alt="Facebook"></a>
-                        <a href="#"><img src="./assets/images/social-3.png" alt="LinkedIn"></a>
-                        <a href="#"><img src="./assets/images/social-4.png" alt="Instagram"></a>
+                        <a href="https://x.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Twitter">
+                            <img src="./assets/images/Clip path group.png" alt="Twitter">
+                        </a>
+
+                        <a href="https://www.facebook.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Facebook">
+                            <img src="./assets/images/social-2.png" alt="Facebook">
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img src="./assets/images/social-3.png" alt="LinkedIn">
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="./assets/images/social-4.png" alt="Instagram">
+                        </a>
+
                     </div>
+
                     <div class="buttons">
-                        <a href="#">Resume Packages</a>
-                        <a href="#">Contact Us</a>
+                        <a href="./pricing.html">Resume Packages</a>
+                        <a href="./contact.html">Contact Us</a>
                     </div>
+
                 </div>
+
             </div>
         </div>
-
     </div>
+
+    <!-- Copyright -->
     <div class="copyright">
         © 2025 ATS Resume. All Rights Reserved
     </div>
 
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-  
-    toggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      toggle.classList.toggle('open');
-    });
-  </script>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (toggle && navMenu) {
+
+            function toggleMenu() {
+                const isActive = navMenu.classList.toggle('active');
+
+                toggle.classList.toggle('open', isActive);
+                toggle.setAttribute('aria-expanded', isActive);
+            }
+
+            toggle.addEventListener('click', toggleMenu);
+
+            toggle.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    toggleMenu();
+                }
+            });
+
+        }
+    </script>
+
 </body>
+</html>
